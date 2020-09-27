@@ -3,7 +3,7 @@ Aplicação de controle de comandas
 
 Entrega: até 28/09, 18:00
 
-# Objetivos: 
+### Objetivos: 
 
 - Criar o projeto do aplicativo final do curso (Baseado na OPE ou outro projeto)
 - Aplicar os conceitos básicos de desenvolvimento de um aplicativo para o Android
@@ -17,9 +17,9 @@ Entrega: até 28/09, 18:00
 - Criar algumas telas para navegar no app
 - Disponibilizar o projeto no GitHub ou similar para a avaliação da atividade
 
-# Grupo: Esta atividade deve ser feita em grupo, o mesmo grupo de desenvolvimento do aplicativo final da disciplina.
+### Grupo: Esta atividade deve ser feita em grupo, o mesmo grupo de desenvolvimento do aplicativo final da disciplina.
 
-# Descrição: Nesta atividade você deve fazer o seguinte (pelo menos):
+### Descrição: Nesta atividade você deve fazer o seguinte (pelo menos):
 
 - Criar um projeto de aplicativo móvel no AndroidStudio. Este será o projeto desenvolvido até o final da disciplina, preferencialmente baseado na sua OPE.
 - Criar uma tela de login com:
@@ -48,4 +48,4 @@ Entrega: até 28/09, 18:00
 - Crie uma branch AC02 com o conteúdo desta AC. O Nome deve ser exatamente AC02. Preste muita atenção. Branches diferentes não serão consideradas e não serão corrigidas posteriormente.
 - Compartilhe o link do repositório no form anexo à tarefa
 
-# Atenção: utilize o mesmo repositório até o final da disciplina. Após a correção e disponibilização da nota das atividades, elas não serão revistas caso estejam em um repositório diferente do cadastrado no formulário da tarefa. Se houver mudança de repositório avisar em aula antes da tarefa ser corrigida.
+### Atenção: utilize o mesmo repositório até o final da disciplina. Após a correção e disponibilização da nota das atividades, elas não serão revistas caso estejam em um repositório diferente do cadastrado no formulário da tarefa. Se houver mudança de repositório avisar em aula antes da tarefa ser corrigida.
