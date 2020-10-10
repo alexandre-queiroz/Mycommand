@@ -1,6 +1,5 @@
 package com.alexandrequeiroz.mycommand
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -9,11 +8,15 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.GravityCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_home.*
+import kotlinx.android.synthetic.main.toolbar.*
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
     var App = MyApplication()
 
@@ -38,6 +41,8 @@ class HomeActivity : AppCompatActivity() {
 
         timer.start()
         progressBar.visibility = View.VISIBLE
+
+        configuraMenuLateral()
 
     }
 
@@ -99,6 +104,43 @@ class HomeActivity : AppCompatActivity() {
         }
 
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun configuraMenuLateral() {
+
+        var toogle = ActionBarDrawerToggle(
+            this,
+            layoutMenuLateral,
+            toolbar,
+            R.string.navigation_drawer_open,
+            R.string.navigation_drawer_close)
+        layoutMenuLateral.addDrawerListener(toogle)
+        toogle.syncState()
+        menu_lateral.setNavigationItemSelectedListener(this)
+    }
+
+    override fun onNavigationItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.nav_diciplinas -> {
+                Toast.makeText(this, "Clicou Disciplinas", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_mensagens -> {
+                Toast.makeText(this, "Clicou Mensagens", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_forum -> {
+                Toast.makeText(this, "Clicou Forum", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_localizacao -> {
+                Toast.makeText(this, "Clicou Localização", Toast.LENGTH_SHORT).show()
+            }
+            R.id.nav_config -> {
+                Toast.makeText(this, "Clicou Config", Toast.LENGTH_SHORT).show()
+            }
+        }
+
+        layoutMenuLateral.closeDrawer(GravityCompat.START)
+        return true
+
     }
 
 }
