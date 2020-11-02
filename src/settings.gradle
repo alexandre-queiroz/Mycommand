@@ -1,2 +1,2 @@
 include ':app'
-rootProject.name='MyCommand'
+rootProject.name='LMSapp'

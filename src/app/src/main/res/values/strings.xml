@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">MyCommand</string>
+    <string name="app_name">O app do menor</string>
+    <string name="mensagem_login">Faz login aí mano </string>
 </resources>
