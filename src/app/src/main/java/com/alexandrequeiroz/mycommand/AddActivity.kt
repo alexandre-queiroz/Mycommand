@@ -16,8 +16,6 @@ class AddActivity: AppCompatActivity() {
         var App = MyApplication()
 
         btnCadastrar.setOnClickListener {
-            App.comandaList += comanda(novaComandaNome.text.toString(),
-                novaComandaValor.text.toString())
 
             Toast.makeText(this, "Nova comanda cadastrada", Toast.LENGTH_LONG).show()
 

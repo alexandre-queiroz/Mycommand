@@ -20,8 +20,10 @@ class ComandaAdapter(private val comandaList: List<comanda>) : RecyclerView.Adap
     override fun onBindViewHolder(holder: ComandaViewHolder, position: Int) {
         val currentItem = comandaList[position]
 
-        holder.nome.text = currentItem.nome
-        holder.valor.text = currentItem.valor
+        holder.id.text = "#" + currentItem.idComanda
+        holder.nome.text = "Mesa: " + currentItem.numMesa
+        holder.valor.text = "R$ " + currentItem.valorComanda
+
     }
 
     override fun getItemCount() = comandaList.size
@@ -30,6 +32,7 @@ class ComandaAdapter(private val comandaList: List<comanda>) : RecyclerView.Adap
 
         val nome: TextView = itemView.text_view_1
         val valor: TextView = itemView.text_view_2
+        val id: TextView = itemView.textView4
 
     }
 
