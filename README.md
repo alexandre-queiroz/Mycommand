@@ -47,5 +47,3 @@ Entrega: até 28/09, 18:00
 -   Dica: coloque este arquivo .gitignore (https://goo.gl/JbiaWG) na raiz do projeto. Ele vai ignorar arquivos desnecessários, como os binários. 
 - Crie uma branch AC02 com o conteúdo desta AC. O Nome deve ser exatamente AC02. Preste muita atenção. Branches diferentes não serão consideradas e não serão corrigidas posteriormente.
 - Compartilhe o link do repositório no form anexo à tarefa
-
-### Atenção: utilize o mesmo repositório até o final da disciplina. Após a correção e disponibilização da nota das atividades, elas não serão revistas caso estejam em um repositório diferente do cadastrado no formulário da tarefa. Se houver mudança de repositório avisar em aula antes da tarefa ser corrigida.
